@@ -1,3 +1,14 @@
-import greeting from "./greet";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import './styles.css'
+import DefaultErrorBoundary from './DefaultErrorBoundary'
 
-console.log(greeting);
+ReactDOM.render(
+  <React.StrictMode>
+    <DefaultErrorBoundary>
+      <App />
+    </DefaultErrorBoundary>
+  </React.StrictMode>,
+  document.getElementById('app')
+)
